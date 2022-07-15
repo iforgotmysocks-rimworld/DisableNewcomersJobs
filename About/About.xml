@@ -9,7 +9,7 @@
   </supportedVersions>
   <packageId>iforgotmysocks.disablenewcomersjobs</packageId>
 	<description>
-v1.0.0
+v0.1.0
   
 This mod allows to automatically disable certain jobs on pawns joining the player colony, be it quest pawns or new colonists, if they're bad at those jobs. Configure jobs and skill threshholds in it's mod options.
 	</description>
