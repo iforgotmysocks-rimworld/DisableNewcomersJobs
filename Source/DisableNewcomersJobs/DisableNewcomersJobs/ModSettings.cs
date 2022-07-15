@@ -37,10 +37,10 @@ namespace DisableNewcomersJobs
                 Text.Font = GameFont.Small;
                 var enabled = savedDef != null;
                 options.CheckboxLabeled("Disable job automatically", ref enabled);
-                var intVal = savedDef?.minLevel ?? 0;
+                var intVal = savedDef?.minLevel ?? 10;
                 if (enabled)
                 {
-                    options.Label($"Set level for disableing: {intVal}");
+                    options.Label($"... when level lower than: {intVal}");
                     var buffer = string.Empty;
                     intVal = Convert.ToInt32(options.Slider(intVal, 0, 20));
                 }
