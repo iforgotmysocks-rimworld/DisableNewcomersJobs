@@ -36,11 +36,11 @@ namespace DisableNewcomersJobs
                 options.Label(def.defName);
                 Text.Font = GameFont.Small;
                 var enabled = savedDef != null;
-                options.CheckboxLabeled("Disable job automatically", ref enabled);
+                options.CheckboxLabeled("DNJ_disableJobAutomatically".Translate(), ref enabled);
                 var intVal = savedDef?.minLevel ?? 10;
                 if (enabled)
                 {
-                    options.Label($"... when level lower than: {intVal}");
+                    options.Label($"{"DNJ_whenLevelLowerThan".Translate()} {intVal}");
                     var buffer = string.Empty;
                     intVal = Convert.ToInt32(options.Slider(intVal, 0, 20));
                 }
