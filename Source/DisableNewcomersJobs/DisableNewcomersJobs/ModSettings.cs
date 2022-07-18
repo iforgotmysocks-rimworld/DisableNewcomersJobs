@@ -1,9 +1,6 @@
-﻿using RimWorld;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
@@ -41,7 +38,6 @@ namespace DisableNewcomersJobs
                 if (enabled)
                 {
                     options.Label($"{"DNJ_whenLevelLowerThan".Translate()} {intVal}");
-                    var buffer = string.Empty;
                     intVal = Convert.ToInt32(options.Slider(intVal, 0, 20));
                 }
                 options.Gap();
